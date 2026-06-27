@@ -1,0 +1,73 @@
+.cards{
+    overflow: scroll;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 10rem;
+
+    .card{
+        // max-width: 21rem;
+
+
+        flex-grow: 1;
+        flex-basis: 20rem;
+        max-width: 30rem;
+
+        padding-inline: 1rem;
+        padding-block: 0.75rem;
+        background-color: #1c1c1ce5;
+        border-radius: 0.5rem;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        gap:0.4rem;
+
+        img{
+            width: 100%;
+            border-radius: 1rem;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-weight: 500;
+            
+            line-height: 1.8rem;
+        }
+        p{
+            word-spacing: 0.3rem;
+            line-height: 1rem;
+            opacity: 0.4;
+        }
+
+        .tags{
+
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5rem;
+
+            .tag{
+                background-color: #353735;
+                width: fit-content;
+                padding-inline: 1rem;
+                padding-block: 0.5rem;
+                border-radius: 0.75rem;
+
+                white-space: nowrap;
+                
+            }
+        }
+
+        .urls{
+            display: flex;
+            gap:1rem;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+    }
+}
